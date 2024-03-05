@@ -1,0 +1,51 @@
+html, body { box-sizing: border-box; } *, *:before, *:after { box-sizing: inherit; }
+@font-face {
+  font-family: "Yantramanav-Bold";
+  src: local("Yantramanav-Bold"),
+   url("./assets/Fonts/Yantramanav-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+.field:focus {
+  box-shadow: inset 0 0 0 2px #8eca7d, 0 0 3px 1px #cde768;
+  outline: none; 
+}
+input[type='radio'] {
+  box-sizing: border-box;
+  appearance: none;
+  background: white;
+  height:35px;
+  width:35px;
+  border: double 1.5px transparent;
+  border-radius: 2px;
+  background-image: linear-gradient(white, white), linear-gradient(#8eca7d , #cde768);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+input[type='radio']:checked {
+  background: url('http://cdn1.iconfinder.com/data/icons/onebit/PNG/onebit_34.png');
+	background-repeat: no-repeat;
+	background-position:center center;
+	background-size:30px 30px;
+}
+label {
+  margin-bottom: 8px;
+  margin-top: 8px;
+  color:#161616;
+  font-weight: 500;
+}
+#modal-content{
+  background-color: white;
+  width: 80%; /* Width in proportion to its parent container*/
+  max-width: 640px; /* Max width where it stops expanding */
+  height: auto; /* Height in proportion to its parent container */
+  margin: auto; /* Auto margin according to the element width */
+  padding: 10px;
+  border-radius: 10px; /* Optional. Rounds container corners */
+  position: absolute;
+  color:black;
+  text-align:center
+}
+#submit:active{
+  transform: scale(1.28);
+  /* box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); */
+}
